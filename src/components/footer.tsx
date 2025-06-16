@@ -50,7 +50,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Premium CS2 external assistance - licensed, secure, and approved.
+              Premium CS2 assistance - licensed, secure, and approved.
               Join thousands of satisfied customers worldwide.
             </p>
             <div className="flex space-x-4">
