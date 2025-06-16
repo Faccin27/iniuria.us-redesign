@@ -9,6 +9,7 @@ import Hero from "@/components/hero"
 import Games from "@/components/games"
 import Features from "@/components/features"
 import VideoShowcase from "@/components/video-showcase"
+import About from "@/components/about"
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
@@ -103,6 +104,7 @@ export default function HomePage() {
           <Games />
           <Features />
           <VideoShowcase />
+          <About />
         </div>
       </div>
     </div>

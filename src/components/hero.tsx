@@ -126,7 +126,7 @@ export default function Hero() {
             <div className="text-gray-400 text-sm">Uptime</div>
           </div>
           <div className="bg-black/60 backdrop-blur-sm border border-purple-500/30 rounded-lg p-4 hover:border-purple-500/50 transition-all duration-300 hover:scale-105">
-            <div className="text-2xl font-bold text-purple-400 mb-1">5+ Years</div>
+            <div className="text-2xl font-bold text-purple-400 mb-1">14+ Years</div>
             <div className="text-gray-400 text-sm">Experience</div>
           </div>
         </div>
