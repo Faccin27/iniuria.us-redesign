@@ -7,6 +7,7 @@ import { ScrollSmoother } from "gsap/ScrollSmoother"
 import Header from "@/components/header"
 import Hero from "@/components/hero"
 import Games from "@/components/games"
+import Features from "@/components/features"
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
@@ -99,6 +100,7 @@ export default function HomePage() {
           <Header />
           <Hero />
           <Games />
+          <Features />
         </div>
       </div>
     </div>
