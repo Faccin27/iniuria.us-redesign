@@ -252,8 +252,8 @@
 /* INIURIA background text */
 .iniuria-bg {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 70%;
+  left:50%;
   transform: translate(-50%, -50%);
   font-size: 20vw;
   font-weight: 900;
