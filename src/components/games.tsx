@@ -69,7 +69,7 @@ export default function Games() {
       status: "v5 Test",
       users: "205 Active",
       viewing: "32 Viewing",
-      description: "Latest CS2 external assistance with advanced features",
+      description: "Latest CS2 most protected assistance with advanced features",
       price: "39.99",
       categories: ["Support", "Discussion"],
     },
@@ -145,7 +145,7 @@ export default function Games() {
           Supported Games Arsenal
         </h2>
         <p className="text-xl text-gray-300 text-center mb-16 max-w-2xl mx-auto">
-          Professional external assistance across multiple gaming platforms
+          Professional assistance across multiple gaming platforms
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

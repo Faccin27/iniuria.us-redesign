@@ -69,7 +69,7 @@ export default function Features() {
       icon: <Download className="w-8 h-8" />,
       title: "Professional Tools",
       description:
-        "Access cutting-edge external assistance tools for competitive gaming advantage.",
+        "Access cutting-edge assistance tools for competitive gaming advantage.",
       color: "from-purple-500 to-purple-600",
     },
     {
