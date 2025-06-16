@@ -246,8 +246,8 @@
   font-size: 20vw;
   font-weight: 900;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(139, 92, 246, 0.1);
-  text-stroke: 1px rgba(139, 92, 246, 0.1);
+  -webkit-text-stroke: 1px rgba(139, 92, 246, 0.2);
+  text-stroke: 2px rgba(139, 92, 246, 0.2);
   pointer-events: none;
   z-index: 1;
   white-space: nowrap;

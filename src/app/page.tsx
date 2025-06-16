@@ -1,26 +1,27 @@
-"use client"
+"use client";
 
-import { useEffect, useRef } from "react"
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { ScrollSmoother } from "gsap/ScrollSmoother"
-import Header from "@/components/header"
-import Hero from "@/components/hero"
-import Games from "@/components/games"
-import Features from "@/components/features"
-import VideoShowcase from "@/components/video-showcase"
-import About from "@/components/about"
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import Games from "@/components/games";
+import Features from "@/components/features";
+import VideoShowcase from "@/components/video-showcase";
+import About from "@/components/about";
+import Footer from "@/components/footer";
 
 if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 }
 
 export default function HomePage() {
-  const smootherRef = useRef<HTMLDivElement>(null)
-  const wrapperRef = useRef<HTMLDivElement>(null)
+  const smootherRef = useRef<HTMLDivElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (typeof window === "undefined") return
+    if (typeof window === "undefined") return;
 
     const ctx = gsap.context(() => {
       // Initialize ScrollSmoother
@@ -30,7 +31,7 @@ export default function HomePage() {
         smooth: 2,
         effects: true,
         normalizeScroll: true,
-      })
+      });
 
       // Parallax background elements
       gsap.utils.toArray(".parallax-bg").forEach((element: any) => {
@@ -43,8 +44,8 @@ export default function HomePage() {
             end: "bottom top",
             scrub: true,
           },
-        })
-      })
+        });
+      });
 
       // Floating animations for CS characters
       gsap.utils.toArray(".floating").forEach((element: any, index) => {
@@ -54,12 +55,12 @@ export default function HomePage() {
           ease: "power2.inOut",
           yoyo: true,
           repeat: -1,
-        })
-      })
-    })
+        });
+      });
+    });
 
-    return () => ctx.revert()
-  }, [])
+    return () => ctx.revert();
+  }, []);
 
   return (
     <div ref={wrapperRef} className="overflow-hidden">
@@ -75,15 +76,33 @@ export default function HomePage() {
             <div className="lightning"></div>
 
             {/* CS:GO Characters with parallax */}
-            <div className="csgo-character csgo-character-1 parallax-bg" data-speed="0.5"></div>
-            <div className="csgo-character csgo-character-2 parallax-bg" data-speed="0.3"></div>
-            <div className="csgo-character csgo-character-3 parallax-bg" data-speed="0.7"></div>
-            <div className="csgo-character csgo-character-4 parallax-bg" data-speed="0.4"></div>
+            <div
+              className="csgo-character csgo-character-1 parallax-bg"
+              data-speed="0.5"
+            ></div>
+            <div
+              className="csgo-character csgo-character-2 parallax-bg"
+              data-speed="0.3"
+            ></div>
+            <div
+              className="csgo-character csgo-character-3 parallax-bg"
+              data-speed="0.7"
+            ></div>
+            <div
+              className="csgo-character csgo-character-4 parallax-bg"
+              data-speed="0.4"
+            ></div>
 
             {/* Energy lines */}
             <div className="energy-line" style={{ top: "20%" }}></div>
-            <div className="energy-line" style={{ top: "60%", animationDelay: "1s" }}></div>
-            <div className="energy-line" style={{ top: "80%", animationDelay: "2s" }}></div>
+            <div
+              className="energy-line"
+              style={{ top: "60%", animationDelay: "1s" }}
+            ></div>
+            <div
+              className="energy-line"
+              style={{ top: "80%", animationDelay: "2s" }}
+            ></div>
 
             {/* Floating particles */}
             {Array.from({ length: 20 }).map((_, i) => (
@@ -98,15 +117,15 @@ export default function HomePage() {
               />
             ))}
           </div>
-
           <Header />
           <Hero />
           <Games />
           <Features />
           <VideoShowcase />
           <About />
+          <Footer />
         </div>
       </div>
     </div>
-  )
+  );
 }
