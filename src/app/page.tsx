@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { ScrollSmoother } from "gsap/ScrollSmoother"
 import Header from "@/components/header"
 import Hero from "@/components/hero"
+import Games from "@/components/games"
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
@@ -97,6 +98,7 @@ export default function HomePage() {
 
           <Header />
           <Hero />
+          <Games />
         </div>
       </div>
     </div>
